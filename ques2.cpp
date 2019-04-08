@@ -34,6 +34,24 @@ int main()
   //  KNAPSACK PART
 
   //AFTER KNAPASACK CALCULATING PART DIJKITSRA ALGORITHM
+  int distfromsource[m];
+  for(int i=0;i<m;i++)
+  {
+    if(i==source-1)
+      distfromsource[i]=0;
+    else
+      distfromsource[i]=500;
+  }
 
-  
+  for(int i=0;i<n-1;i++)
+  {
+    for(int j=0;j<m;j++)
+    {
+      if((distfromsource[(dist[j][0])] != 500) && (distfromsource[dist[j][1]] > distfromsource[dist[j][0]] + dist[j][2]))
+      {
+        distfromsource[dist[j][1]] = distfromsource[dist[j][0]] + dist[j][2];s
+      }
+    }
+  }
+
 }
